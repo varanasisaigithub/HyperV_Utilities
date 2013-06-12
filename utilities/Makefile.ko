@@ -1,0 +1,7 @@
+KMOD= hv_kvp
+SRCS= hv_kvp.c
+CFLAGS+=-I/usr/freebsd/sys/dev/hyperv/include
+CFLAGS+=-I/usr/obj/usr/freebsd/sys/HYPERV_VM
+CFLAGS+=-g
+CFLAGS+=-DEBUG
+.include <bsd.kmod.mk>
